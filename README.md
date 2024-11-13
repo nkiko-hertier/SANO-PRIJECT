@@ -19,3 +19,7 @@ Technologies Used:
 Tailwind CSS
 Vanilla JavaScript
 BootstrapIcons
+
+### Developers
+- Nkiko Hertier (https://rw.linkedin.com/in/nkiko-hertier-a9b2162aa)
+- Imfura Thierry (https://linktr.ee/imfdabexxt)
