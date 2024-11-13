@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHNCF - courses</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        *{
+            transition: 0.35s;
+        }
+        .under-effect::after{
+            content: " ";
+            position: absolute;
+            transform: translate(-50%, -50%);
+            width: 20%;
+            bottom: -10px;
+            border-radius: 10px;
+            left: 20%;
+            height: 5px;
+            background-color: #6776ff;
+        }
+        .snaow-card{
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.456), transparent);
+        }
+        .team-card:nth-child(2){
+            filter: blur(0);
+        }
+  /* Container for the slider */
+  .slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+  }
+
+  /* Individual slides */
+  .slide {
+    flex: none;
+    scroll-snap-align: center;
+    scroll-snap-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+  }
+    </style>
+    <script src="./public/js/tailwind.js"></script>
+</head>
+<body class="bg-slate-900">
+    <section class="h-28 bg-black flex justify-center items-center">
+        <p class="text-zinc-400">Place for header section </p>
+    </section> 
+    <main class="flex flex-col">
+        <section class="bg-[url(./public/img/image.png)] bg-fixed">
+            <div class="w-full px-5 py-10  h-full bg-[#1c214d7e]">
+                <section class="h-[400px] rounded-lg relative flex justify-center flex-col gap-5 items-center backdrop-blur-md">
+                    <h1 class="text-white relative w-fit uppercase font-extrabold text-4xl text-center md:text-6xl">Welcome to courses <br><span class="text-indigo-400">HCDN</span> Area</h1>
+                    <div>
+                        <i class="bi bi-play-fill shadow-md size-[100px] rounded-full bg-[#fff2] text-white text-7xl flex justify-center items-center"></i>
+                    </div>
+                </section>
+                <div class="py-5">
+                    <h1 class="text-white relative w-fit under-effect text-4xl">Features Courses</h1>
+                </div>
+                <!--SECTION for features course-->
+                <div class="duplicate-8 mt-10 grid gap-4 grid-cols-1 max-sm:grid-cols-1 max-md:grid-cols-2 md:grid-cols-4">
+                    <!--Card-->
+                    <div class="snaow-card max-sm:border-b border-indigo-500 max-sm:flex w-full h-fit p-2 shadow-md backdrop-blur-md rounded-lg">
+                        <div class="cover max-sm:w-1/2 max-sm:h-auto h-[200px]">
+                            <img src="./public/img/image.png" class="object-cover size-full rounded-2xl" alt="">
+                        </div>
+                        <div class="content p-2">
+                            <h1 class="text-white text-2xl">Red Heart Operations In cyber architecture</h1>
+                            <div class="flex">
+                                <p class="text-indigo-500">BASICS  | &nbsp;</p>
+                                <p class="text-indigo-500">1.3k</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--SECTION for inspirational-->
+                <section class="min-h-[400px] py-5">
+                    <div class="py-5 flex">
+                        <h1 class="text-white mx-auto relative w-fit under-effect text-4xl">Inspirational Words</h1>
+                    </div>
+                    <div class="overflow-autos">
+                        <div class="duplicate-6 slider-container wrapper my-4 flex px-5 md:px-20 flex-shrink-0 gap-5 w-full overflow-x-auto">
+                            <div class="slide card team-card hover:blur-0 w-[calc(90vw)] md:w-[50vw] rounded-2xl min-h-[300px] backdrop-blur-md">
+                                <div class="flex justify-center items-center w-fit">
+                                    <div class="cover size-[100px] p-5">
+                                        <img src="./public/img/person/image.png" class="size-full object-cover object-center rounded-full" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-white text-xl">Nkiko hertier</h1>
+                                        <p class="text-indigo-400">Developer</p>
+                                    </div>
+                                </div>
+                                <div class="p-5">
+                                    <p class="text-indigo-100 py-2 text-xl border-indigo-500 bg-[#9857fa0b] pl-5 border-l-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eos eius quam optio facere placeat sed, quo suscipit temporibus ab. Quam explicabo vel corporis necessitatibus odio! Aperiam, ullam. Quibusdam, ipsum?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <section class="h-28 bg-black flex justify-center items-center">
+        <p class="text-zinc-400">copyright &copy; HCDN 2025 <i class="bi bi-heart-fill text-red-500"></i> By Nkiko Hertier</p>
+    </section>
+    <script src="./public/js/duplicateJS.js"></script>
+</body>
+</html>

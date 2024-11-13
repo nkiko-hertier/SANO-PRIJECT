@@ -1,0 +1,45 @@
+.field{
+    position: relative;
+}
+.field > label{
+    transition: 0.35s;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 40px;
+    
+}
+button{
+    transition: 0.35s;
+}
+.submit-button:hover{
+    box-shadow: 
+    0px 0px 25px rgb(99 102 241),
+    0px 0px 75px rgb(99 102 241),
+    0px 0px 95px rgb(99 102 241);
+}
+input:not(:placeholder-shown), input:focus{
+    border-color: rgb(119, 121, 241);
+}
+input:not(:focus) ~ .snoaw-list:not(:hover){
+    height: 0px;
+}
+.snoaw-list::-webkit{
+    width: 0px;
+    background-color: red;
+}
+input:not(:placeholder-shown)
++ label{
+    transition: 0.35s;
+    top: 0%;
+    font-size: 0.875rem;
+    color: rgb(134, 136, 241);
+}
+input:focus + label{
+    align-content: flex-start;
+    display: flexbox;
+    transition: 0.35s;
+    top: 0%;
+    font-size: 0.875rem;
+    color: rgb(134, 136, 241);
+}
