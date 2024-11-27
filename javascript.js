@@ -45,13 +45,11 @@ function generateCard(quot) {
   return card;
 }
 
-function displayCards(id, paragraphs){
+function displayCards(id, quots){
   let cards = '';
-  paragraphs.forEach(paragraph => {
+  quots.forEach(paragraph => {
     cards += generateCard(paragraph)
   });
   const cardsContainer = document.getElementById(id);
   cardsContainer.innerHTML = cards;
 }
-
-displayCards('cards', paragraphs)
