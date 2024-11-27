@@ -54,4 +54,4 @@ function displayCards(id, paragraphs){
   cardsContainer.innerHTML = cards;
 }
 
-displayCards(2, paragraphs)
+displayCards('cards', paragraphs)
